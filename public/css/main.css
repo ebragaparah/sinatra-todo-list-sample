@@ -1,0 +1,9 @@
+body {
+  background: url('/images/escheresque_ste_@2X.png');
+  color: #fff;
+}
+
+a, a:hover {
+  text-decoration: none;
+  color: #fff;
+}
