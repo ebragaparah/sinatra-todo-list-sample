@@ -1,5 +1,5 @@
 require 'sinatra'
 
 get '/' do
-  "ToDo list"
+  erb :index
 end
