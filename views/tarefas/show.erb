@@ -1,0 +1,10 @@
+<h2>Tarefa <%= @tarefa.id %>: <%= @tarefa.content %></h2>
+
+<p><%= @tarefa.content %></p>
+
+<a href="/">Voltar</a> | <a href="/tarefas/<%= @tarefa.id %>/edit">Editar</a>
+
+<form action="/tarefas/<%= @tarefa.id %>" method="post">
+<input type="hidden" name="_method" value="delete" />
+<input type="submit" value="Delete">
+</form>

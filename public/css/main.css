@@ -9,5 +9,15 @@ a, a:hover {
 }
 
 #campo-adicionar-tarefa {
-  margin-top: 70px;
+  margin-top: 100px;
+}
+
+.tarefas > ul {
+  list-style: none;
+}
+
+.tarefas {
+  display: block;
+  font-size: 1.5em;
+  margin-top: 100px;
 }
