@@ -1,9 +1,13 @@
 body {
-  background: url('/images/escheresque_ste_@2X.png');
+  background: url('/images/flowers.png');
   color: #fff;
 }
 
 a, a:hover {
   text-decoration: none;
   color: #fff;
+}
+
+#campo-adicionar-tarefa {
+  margin-top: 70px;
 }
