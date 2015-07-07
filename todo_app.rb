@@ -8,6 +8,7 @@ class Tarefa
 
   property :id,           Serial
   property :content,      String, :required => true
+  property :details,      String
   property :completed_at, DateTime
 end
 
@@ -26,4 +27,26 @@ end
 get '/tarefas/:id' do |id|
   @tarefa = Tarefa.get!(id)
   erb :'tarefas/show'
+end
+
+get '/tarefas/:id/edit' do |id|
+  @tarefa = Tarefa.get!(id)
+  erb :'tarefas/edit'
+end
+
+put '/tarefas/:id' do |id|
+  tarefa = Tarefa.get!(id)
+  success = tarefa.update!(params[:tarefa])
+
+  if success
+    redirect "/tarefas/#{id}"
+  else
+    redirect "/tarefas/#{id}/edit"
+  end
+end
+
+delete '/tarefas/:id' do |id|
+  tarefa = Tarefa.get!(id)
+  tarefa.destroy!
+  redirect "/"
 end

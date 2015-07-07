@@ -1,10 +1,11 @@
 <h2>Tarefa <%= @tarefa.id %>: <%= @tarefa.content %></h2>
 
 <p><%= @tarefa.content %></p>
+<p><%= @tarefa.details %></p>
 
-<a href="/">Voltar</a> | <a href="/tarefas/<%= @tarefa.id %>/edit">Editar</a>
-
-<form action="/tarefas/<%= @tarefa.id %>" method="post">
-<input type="hidden" name="_method" value="delete" />
-<input type="submit" value="Delete">
+<form action="/tarefas/<%= @tarefa.id %>" method="post" class="form-inline">
+  <a href="/" class="btn btn-danger"><span class="glyphicon glyphicon-chevron-left"> Voltar</span></a>
+  <a href="/tarefas/<%= @tarefa.id %>/edit" class="btn btn-success"><span class="glyphicon glyphicon-edit"> Editar</span></a>
+  <input type="hidden" name="_method" value="delete" />
+  <button type="submit" class="btn btn-danger"><span class="glyphicon glyphicon-edit"> Excluir tarefa</span></button>
 </form>
