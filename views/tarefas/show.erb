@@ -1,11 +1,20 @@
-<h2>Tarefa <%= @tarefa.id %>: <%= @tarefa.content %></h2>
+<div class="col-md-6 col-md-offset-3">
+  <div class="opacity">
+    <div class="titulo-tarefa">
+      <h2><%= @tarefa.title %></h2>
+    </div>
 
-<p><%= @tarefa.content %></p>
-<p><%= @tarefa.details %></p>
+    <div class="formulario-editar-tarefa">
+      <form action="/tarefas/<%= @tarefa.id %>" method="post" class="form-inline">
+        <a href="/" class="btn btn-success"><span class="glyphicon glyphicon-chevron-left"></span> Voltar</a>
+        <a href="/tarefas/<%= @tarefa.id %>/edit" class="btn btn-success"><span class="glyphicon glyphicon-edit"></span> Editar</a>
+        <input type="hidden" name="_method" value="delete" />
+        <button type="submit" class="btn btn-danger"><span class="glyphicon glyphicon-edit"></span> Excluir tarefa</button>
+      </form>
+    </div>
 
-<form action="/tarefas/<%= @tarefa.id %>" method="post" class="form-inline">
-  <a href="/" class="btn btn-danger"><span class="glyphicon glyphicon-chevron-left"> Voltar</span></a>
-  <a href="/tarefas/<%= @tarefa.id %>/edit" class="btn btn-success"><span class="glyphicon glyphicon-edit"> Editar</span></a>
-  <input type="hidden" name="_method" value="delete" />
-  <button type="submit" class="btn btn-danger"><span class="glyphicon glyphicon-edit"> Excluir tarefa</span></button>
-</form>
+    <div class="detalhes-tarefa">
+      <p><%= @tarefa.details %></p>
+    </div>
+  </div>
+</div>

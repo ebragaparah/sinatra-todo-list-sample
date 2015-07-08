@@ -7,7 +7,7 @@ class Tarefa
   include DataMapper::Resource
 
   property :id,           Serial
-  property :content,      String, :required => true
+  property :title,        String, :required => true
   property :details,      String
   property :completed_at, DateTime
 end

@@ -3,11 +3,12 @@
     <form class="" action="/tarefas/<%= @tarefa.id %>" method="post">
       <input name="_method" type="hidden" value="put" />
       <div class="form-group">
-        <input type="text" name="tarefa[content]" value="<%= @tarefa.content %>" id="" class="form-control" />
+        <input type="text" name="tarefa[title]" value="<%= @tarefa.title %>" id="" class="form-control" />
       </div>
       <div class="form-group">
-        <textarea name="tarefa[details]" rows="3" cols="40"><%= @tarefa.details %></textarea></p>
+        <textarea id="textarea-editar-tarefa" name="tarefa[details]" rows="8"><%= @tarefa.details %></textarea></p>
       </div>
+      <a href="/tarefas/<%= @tarefa.id %>" class="btn btn-danger"><span class="glyphicon glyphicon-chevron-left"></span> Voltar</a>
       <button type="submit" class="btn btn-success pull-right">Salvar alterações <span class="glyphicon glyphicon-chevron-right" /></button>
     </form>
   </div>

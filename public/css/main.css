@@ -3,21 +3,49 @@ body {
   color: #fff;
 }
 
+#titulo-pagina {
+  text-align: center;
+  margin-top: 50px;
+}
+
 a, a:hover {
   text-decoration: none;
   color: #fff;
 }
 
 #campo-adicionar-tarefa {
-  margin-top: 100px;
+  margin-top: 30px;
+}
+
+#textarea-editar-tarefa {
+  width: 100%;
+  color: #000;
+  resize: vertical;
 }
 
 .tarefas > ul {
   list-style: none;
 }
 
+.detalhes-tarefa {
+  word-wrap: break-word;
+  margin-bottom: 80px;
+}
+
 .tarefas {
   display: block;
   font-size: 1.5em;
   margin-top: 100px;
+}
+
+.formulario-editar-tarefa {
+  margin-bottom: 20px;
+}
+
+.opacity {
+  /*background: rgba(204, 204, 204, 0.2);*/
+}
+
+.footer {
+  margin-top: 50px;
 }
