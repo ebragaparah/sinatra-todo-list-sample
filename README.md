@@ -30,12 +30,12 @@ sudo gem install sqlite3-ruby
 
 ####MAC
 
-Instalando [Ruby](https://www.ruby-lang.org/pt/)
+Instalando o [Ruby](https://www.ruby-lang.org/pt/)
 ```
 brew install ruby
 ```
 
-Instalando [Sinatra](http://www.sinatrarb.com/intro.html)
+Instalando o [Sinatra](http://www.sinatrarb.com/intro.html)
 ```
 gem install sinatra
 ```
