@@ -1,5 +1,6 @@
 
-#TODO List
+TODO List
+------------
 
 Esta é uma aplicação simples utilizando ruby e sinatra, para adicionar a sua lista de afazeres.
 
@@ -8,36 +9,54 @@ Esta é uma aplicação simples utilizando ruby e sinatra, para adicionar a sua 
 ####UNIX
 
 Instalando o [Ruby](https://www.ruby-lang.org/pt/)
-<code> sudo apt-get install ruby<code>
+```
+sudo apt-get install ruby
+```
 
 Instalando o [Sinatra](http://www.sinatrarb.com/intro.html)
-<code> sudo gem install sinatra<code>
+```
+ sudo gem install sinatra
+ ```
 
 Instalando o  [DataMapper](http://datamapper.org/)
-<code> sudo gem install data_mapper<code>
+```
+sudo gem install data_mapper
+```
 
 Instalando o [Sqlite3] (https://rubygems.org/gems/sqlite3)
-<code>sudo gem install sqlite3-ruby<code>
+```
+sudo gem install sqlite3-ruby
+```
 
 ####MAC
 
 Instalando [Ruby](https://www.ruby-lang.org/pt/)
-<code>brew install ruby<code>
+```
+brew install ruby
+```
 
 Instalando [Sinatra](http://www.sinatrarb.com/intro.html)
-<code>gem install sinatra<code>
+```
+gem install sinatra
+```
 
 Instalando o  [DataMapper](http://datamapper.org/)
-<code>gem install data_mapper<code>
+```
+gem install data_mapper
+```
 
 Instalando o [Sqlite3](https://rubygems.org/gems/sqlite3)
-<code>gem install sqlite3-ruby<code>
+```
+gem install sqlite3-ruby
+```
 
 
 ##Executando 
 
 No terminal execute:
-<code>ruby run todo_app.rb<code>
+```
+ruby run todo_app.rb
+```
 
 No browser acesse http://localhost:4567/
 
