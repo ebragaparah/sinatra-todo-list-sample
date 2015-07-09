@@ -1,6 +1,7 @@
 body {
   background: url('/images/flowers.png');
   color: #fff;
+  font-family: 'Open Sans';
 }
 
 #titulo-pagina {
@@ -23,6 +24,15 @@ a, a:hover {
   resize: vertical;
 }
 
+#botao-remover-tarefa {
+  opacity: 0.2;
+}
+
+#botao-remover-tarefa:hover {
+  opacity: 1.0;
+  color: #ff0000;
+}
+
 .tarefas > ul {
   list-style: none;
 }
@@ -42,8 +52,11 @@ a, a:hover {
   margin-bottom: 20px;
 }
 
-.opacity {
-  /*background: rgba(204, 204, 204, 0.2);*/
+.botao-transparente {
+  background: transparent;
+  border: none;
+  outline: none;
+  display: block;
 }
 
 .footer {

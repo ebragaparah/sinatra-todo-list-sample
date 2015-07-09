@@ -8,12 +8,20 @@
     </form>
     <div class="tarefas">
       <table class="table">
-        <tr>
-          <th>Conteúdo</th>
-        </tr>
         <% @tarefas.each do |tarefa| %>
           <tr>
             <td><a href="/tarefas/<%= tarefa.id %>"><%= tarefa.title %></a></td>
+            <td><a href="/tarefas/<%= tarefa.id %>/edit"><span class="glyphicon glyphicon-list-alt"></span></a></td>
+            <td><span class="glyphicon glyphicon-ok"></span><a href="/tarefas/<%= tarefa.id %>"></a></td>
+            <td>
+              <form action="/tarefas/<%= tarefa.id %>" method="post" class="">
+                <button type="submit" name="button" class="botao-transparente">
+                  <span aria-hidden="true" class="glyphicon glyphicon-remove" id="botao-remover-tarefa">
+                  </span>
+                </button>
+                <input type="hidden" name="_method" value="delete" />
+              </form>
+            </td>
           </tr>
         <% end %>
       </table>

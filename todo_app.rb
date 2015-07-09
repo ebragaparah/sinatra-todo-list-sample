@@ -9,7 +9,7 @@ class Tarefa
   property :id,           Serial
   property :title,        String, :required => true
   property :details,      String
-  property :completed_at, DateTime
+  property :completed,    Boolean
 end
 
 DataMapper.finalize.auto_upgrade!
